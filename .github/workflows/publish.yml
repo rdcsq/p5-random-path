@@ -24,7 +24,7 @@ jobs:
         run: bun install
 
       - name: build
-        run: bun run build --base=/
+        run: bun run build --base=/p5-random-path/
 
       - name: upload artifact
         uses: actions/upload-pages-artifact@v3
