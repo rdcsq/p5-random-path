@@ -39,7 +39,7 @@ export class Simulation {
     for (let i = 0; i < currentState.getStepsTaken(); i++) {
       table.push({
         cuadrasRecorridas: i + 1,
-        numeroAleatorio: currentState.getRandomNumbers()[i],
+        numeroAleatorio: currentState.getResults()[i].n,
         localizacion: `(${currentState.getSteps()[i].x}, ${currentState.getSteps()[i].y})`,
         exito: false,
       });
